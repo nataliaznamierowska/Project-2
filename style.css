@@ -15,7 +15,7 @@
 }
 
 /* header */
-.header__nav {
+.navigation {
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -53,9 +53,9 @@ p {
 	margin-left: var(--margin-p);
 	font-size: var(--font-size);
 }
-.header__nav name {
+.navigation__nav--name {
 	position: absolute;
-	margin-left: 14px;
+	margin-left: var(--margin-p);
 }
 .header__btn {
 	position: absolute;
@@ -68,32 +68,83 @@ p {
 	border: 3px solid #ffffff;
 }
 /* main */
-.first__container {
+
+.first-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	text-align: justify;
-	margin-right: 14px;
+	margin-right: var(--margin-p);
 	padding-top: 56px;
+	padding-bottom: 56px;
+	font-size: var(--font-size);
 	color: #152d41;
 }
-.first__container--text {
+.first-container__title {
+	font-size: 36px;
+	margin-left: 28px;
+	margin-right: 28px;
+	line-height: 100px;
+}
+.bold-text {
+	font-weight: var(--bold-font);
+	line-height: 80px;
+}
+.first-container__text {
 	color: #000000;
 }
-.first__image {
+
+.first-img {
 	background-image: url(/img/pracownik-1.png);
 	background-position: top;
 	border-radius: 50%;
 	width: 221px;
 	height: 221px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
-.second__image {
+.second__img {
 	background-image: url(/img/pracownik-2.jpg);
 	background-position: top;
 	border-radius: 50%;
 	width: 221px;
 	height: 221px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+/* second container */
+.second-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: #405d78;
+}
+.second-container__item {
+	background-color: var(--bg-color);
+	width: 338px;
+	height: 331px;
+	margin-top: 35px;
+}
+.second-container__about-us {
+	font-size: 26px;
+	font-weight: var(--bold-font);
+	color: var(--color-white);
+	margin-top: 76px;
+}
+.item__first {
+	position: relative;
+}
+.item__first--circle {
+	position: absolute;
+	left: -17px;
+	top: -17px;
+	width: 37px;
+	height: 37px;
+	border-radius: 50%;
+	background-color: #e07a64;
 }
 /* footer */
 footer {
