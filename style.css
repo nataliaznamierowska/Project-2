@@ -67,6 +67,34 @@ p {
 	color: var(--color-white);
 	border: 3px solid #ffffff;
 }
+/* main */
+.first__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	margin-right: 14px;
+	padding-top: 56px;
+	color: #152d41;
+}
+.first__container--text {
+	color: #000000;
+}
+.first__image {
+	background-image: url(/img/pracownik-1.png);
+	background-position: top;
+	border-radius: 50%;
+	width: 221px;
+	height: 221px;
+}
+.second__image {
+	background-image: url(/img/pracownik-2.jpg);
+	background-position: top;
+	border-radius: 50%;
+	width: 221px;
+	height: 221px;
+}
 /* footer */
 footer {
 	display: flex;
