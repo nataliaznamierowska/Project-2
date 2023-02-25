@@ -199,3 +199,23 @@ a {
 	font-size: var(--font-size);
 	font-weight: var(--bold-font);
 }
+@media (min-width: 768px) {
+	.first-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.second-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 56px;
+	}
+	.second-container__about-us {
+		display: flex;
+		justify-content: center;
+		width: 100vh;
+		padding: 56px;
+	}
+	.second-container__item {
+		margin: 18px 18px 18px 18px;
+	}
+}
